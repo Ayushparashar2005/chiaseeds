@@ -1,0 +1,542 @@
+{
+    "stats": {
+        "total_rows": 5572,
+        "total_cols": 2,
+        "missing_values": {
+            "label": 0,
+            "text": 0
+        },
+        "duplicate_records": 403,
+        "class_counts": {
+            "ham": 4825,
+            "spam": 747
+        },
+        "cleaned_rows": 5169,
+        "cleaned_duplicates": 0,
+        "preprocessing_examples": [
+            {
+                "original": "Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...",
+                "cleaned": "go jurong point crazy available bugis great world la buffet cine got amore wat",
+                "label": "ham"
+            },
+            {
+                "original": "FreeMsg Hey there darling it's been 3 week's now and no word back! I'd like some fun you up for it still? Tb ok! XxX std chgs to send, \u00e5\u00a31.50 to rcv",
+                "cleaned": "freemsg hey darling week word back id like fun still tb ok xxx std chgs send \u00e5\u00a3 rcv",
+                "label": "spam"
+            },
+            {
+                "original": "WINNER!! As a valued network customer you have been selected to receivea \u00e5\u00a3900 prize reward! To claim call 09061701461. Claim code KL341. Valid 12 hours only.",
+                "cleaned": "winner valued network customer selected receivea \u00e5\u00a3 prize reward claim call claim code kl valid hour",
+                "label": "spam"
+            },
+            {
+                "original": "URGENT! You have won a 1 week FREE membership in our \u00e5\u00a3100,000 Prize Jackpot! Txt the word: CLAIM to No: 81010 T&C www.dbuk.net LCCLTD POBOX 4403LDNW1A7RW18",
+                "cleaned": "urgent week free membership \u00e5\u00a3 prize jackpot txt word claim tc lccltd pobox ldnwarw",
+                "label": "spam"
+            },
+            {
+                "original": "XXXMobileMovieClub: To use your credit, click the WAP link in the next txt message or click here>> http://wap. xxxmobilemovieclub.com?n=QJKGIGHJJGCBL",
+                "cleaned": "xxxmobilemovieclub use credit click wap link next txt message click xxxmobilemovieclubcomnqjkgighjjgcbl",
+                "label": "spam"
+            }
+        ],
+        "top_words": {
+            "overall": [
+                [
+                    "call",
+                    509
+                ],
+                [
+                    "im",
+                    449
+                ],
+                [
+                    "get",
+                    377
+                ],
+                [
+                    "ur",
+                    316
+                ],
+                [
+                    "go",
+                    298
+                ],
+                [
+                    "dont",
+                    258
+                ],
+                [
+                    "ltgt",
+                    254
+                ],
+                [
+                    "ok",
+                    251
+                ],
+                [
+                    "know",
+                    248
+                ],
+                [
+                    "free",
+                    245
+                ],
+                [
+                    "got",
+                    244
+                ],
+                [
+                    "like",
+                    234
+                ],
+                [
+                    "come",
+                    228
+                ],
+                [
+                    "day",
+                    227
+                ],
+                [
+                    "\u00e5\u00a3",
+                    225
+                ],
+                [
+                    "time",
+                    224
+                ],
+                [
+                    "good",
+                    218
+                ],
+                [
+                    "want",
+                    208
+                ],
+                [
+                    "ill",
+                    206
+                ],
+                [
+                    "text",
+                    197
+                ]
+            ],
+            "spam": [
+                [
+                    "call",
+                    316
+                ],
+                [
+                    "\u00e5\u00a3",
+                    221
+                ],
+                [
+                    "free",
+                    190
+                ],
+                [
+                    "txt",
+                    126
+                ],
+                [
+                    "text",
+                    121
+                ],
+                [
+                    "ur",
+                    119
+                ],
+                [
+                    "mobile",
+                    115
+                ],
+                [
+                    "stop",
+                    106
+                ],
+                [
+                    "claim",
+                    98
+                ],
+                [
+                    "reply",
+                    95
+                ],
+                [
+                    "prize",
+                    82
+                ],
+                [
+                    "get",
+                    69
+                ],
+                [
+                    "new",
+                    64
+                ],
+                [
+                    "service",
+                    64
+                ],
+                [
+                    "tone",
+                    62
+                ],
+                [
+                    "urgent",
+                    58
+                ],
+                [
+                    "send",
+                    57
+                ],
+                [
+                    "nokia",
+                    57
+                ],
+                [
+                    "phone",
+                    53
+                ],
+                [
+                    "cash",
+                    51
+                ]
+            ],
+            "ham": [
+                [
+                    "im",
+                    436
+                ],
+                [
+                    "get",
+                    308
+                ],
+                [
+                    "go",
+                    267
+                ],
+                [
+                    "ltgt",
+                    254
+                ],
+                [
+                    "ok",
+                    246
+                ],
+                [
+                    "dont",
+                    242
+                ],
+                [
+                    "got",
+                    238
+                ],
+                [
+                    "know",
+                    229
+                ],
+                [
+                    "come",
+                    223
+                ],
+                [
+                    "like",
+                    222
+                ],
+                [
+                    "time",
+                    206
+                ],
+                [
+                    "good",
+                    206
+                ],
+                [
+                    "ill",
+                    205
+                ],
+                [
+                    "ur",
+                    197
+                ],
+                [
+                    "day",
+                    197
+                ],
+                [
+                    "call",
+                    193
+                ],
+                [
+                    "want",
+                    179
+                ],
+                [
+                    "love",
+                    174
+                ],
+                [
+                    "need",
+                    167
+                ],
+                [
+                    "one",
+                    163
+                ]
+            ]
+        }
+    },
+    "results_tfidf": {
+        "Logistic Regression": {
+            "accuracy": 0.9758220502901354,
+            "precision": 0.9477611940298507,
+            "recall": 0.8758620689655172,
+            "f1_score": 0.9103942652329748,
+            "confusion_matrix": [
+                [
+                    882,
+                    7
+                ],
+                [
+                    18,
+                    127
+                ]
+            ],
+            "classification_report": {
+                "0": {
+                    "precision": 0.98,
+                    "recall": 0.9921259842519685,
+                    "f1-score": 0.9860257126886529,
+                    "support": 889.0
+                },
+                "1": {
+                    "precision": 0.9477611940298507,
+                    "recall": 0.8758620689655172,
+                    "f1-score": 0.9103942652329748,
+                    "support": 145.0
+                },
+                "accuracy": 0.9758220502901354,
+                "macro avg": {
+                    "precision": 0.9638805970149253,
+                    "recall": 0.9339940266087429,
+                    "f1-score": 0.9482099889608139,
+                    "support": 1034.0
+                },
+                "weighted avg": {
+                    "precision": 0.9754790842691763,
+                    "recall": 0.9758220502901354,
+                    "f1-score": 0.9754197553568605,
+                    "support": 1034.0
+                }
+            }
+        },
+        "Multinomial Naive Bayes": {
+            "accuracy": 0.97678916827853,
+            "precision": 0.9548872180451128,
+            "recall": 0.8758620689655172,
+            "f1_score": 0.9136690647482015,
+            "confusion_matrix": [
+                [
+                    883,
+                    6
+                ],
+                [
+                    18,
+                    127
+                ]
+            ],
+            "classification_report": {
+                "0": {
+                    "precision": 0.9800221975582686,
+                    "recall": 0.9932508436445444,
+                    "f1-score": 0.9865921787709497,
+                    "support": 889.0
+                },
+                "1": {
+                    "precision": 0.9548872180451128,
+                    "recall": 0.8758620689655172,
+                    "f1-score": 0.9136690647482015,
+                    "support": 145.0
+                },
+                "accuracy": 0.97678916827853,
+                "macro avg": {
+                    "precision": 0.9674547078016906,
+                    "recall": 0.9345564563050308,
+                    "f1-score": 0.9501306217595756,
+                    "support": 1034.0
+                },
+                "weighted avg": {
+                    "precision": 0.9764974663886288,
+                    "recall": 0.97678916827853,
+                    "f1-score": 0.976366016746483,
+                    "support": 1034.0
+                }
+            }
+        },
+        "Random Forest": {
+            "accuracy": 0.9738878143133463,
+            "precision": 0.9916666666666667,
+            "recall": 0.8206896551724138,
+            "f1_score": 0.8981132075471697,
+            "confusion_matrix": [
+                [
+                    888,
+                    1
+                ],
+                [
+                    26,
+                    119
+                ]
+            ],
+            "classification_report": {
+                "0": {
+                    "precision": 0.9715536105032823,
+                    "recall": 0.9988751406074241,
+                    "f1-score": 0.9850249584026622,
+                    "support": 889.0
+                },
+                "1": {
+                    "precision": 0.9916666666666667,
+                    "recall": 0.8206896551724138,
+                    "f1-score": 0.8981132075471697,
+                    "support": 145.0
+                },
+                "accuracy": 0.9738878143133463,
+                "macro avg": {
+                    "precision": 0.9816101385849745,
+                    "recall": 0.9097823978899189,
+                    "f1-score": 0.9415690829749159,
+                    "support": 1034.0
+                },
+                "weighted avg": {
+                    "precision": 0.9743741067737761,
+                    "recall": 0.9738878143133463,
+                    "f1-score": 0.972837140342656,
+                    "support": 1034.0
+                }
+            }
+        },
+        "Decision Tree": {
+            "accuracy": 0.9468085106382979,
+            "precision": 0.8082191780821918,
+            "recall": 0.8137931034482758,
+            "f1_score": 0.8109965635738832,
+            "confusion_matrix": [
+                [
+                    861,
+                    28
+                ],
+                [
+                    27,
+                    118
+                ]
+            ],
+            "classification_report": {
+                "0": {
+                    "precision": 0.9695945945945946,
+                    "recall": 0.968503937007874,
+                    "f1-score": 0.9690489589195274,
+                    "support": 889.0
+                },
+                "1": {
+                    "precision": 0.8082191780821918,
+                    "recall": 0.8137931034482758,
+                    "f1-score": 0.8109965635738832,
+                    "support": 145.0
+                },
+                "accuracy": 0.9468085106382979,
+                "macro avg": {
+                    "precision": 0.8889068863383932,
+                    "recall": 0.8911485202280749,
+                    "f1-score": 0.8900227612467053,
+                    "support": 1034.0
+                },
+                "weighted avg": {
+                    "precision": 0.9469645797064916,
+                    "recall": 0.9468085106382979,
+                    "f1-score": 0.9468849382956217,
+                    "support": 1034.0
+                }
+            }
+        },
+        "Support Vector Machine": {
+            "accuracy": 0.9845261121856866,
+            "precision": 0.9708029197080292,
+            "recall": 0.9172413793103448,
+            "f1_score": 0.9432624113475178,
+            "confusion_matrix": [
+                [
+                    885,
+                    4
+                ],
+                [
+                    12,
+                    133
+                ]
+            ],
+            "classification_report": {
+                "0": {
+                    "precision": 0.9866220735785953,
+                    "recall": 0.9955005624296963,
+                    "f1-score": 0.9910414333706606,
+                    "support": 889.0
+                },
+                "1": {
+                    "precision": 0.9708029197080292,
+                    "recall": 0.9172413793103448,
+                    "f1-score": 0.9432624113475178,
+                    "support": 145.0
+                },
+                "accuracy": 0.9845261121856866,
+                "macro avg": {
+                    "precision": 0.9787124966433123,
+                    "recall": 0.9563709708700205,
+                    "f1-score": 0.9671519223590892,
+                    "support": 1034.0
+                },
+                "weighted avg": {
+                    "precision": 0.9844037202795315,
+                    "recall": 0.9845261121856866,
+                    "f1-score": 0.9843412803790207,
+                    "support": 1034.0
+                }
+            }
+        }
+    },
+    "results_count": {
+        "Logistic Regression": {
+            "accuracy": 0.9787234042553191,
+            "precision": 0.992,
+            "recall": 0.8551724137931035,
+            "f1_score": 0.9185185185185186
+        },
+        "Multinomial Naive Bayes": {
+            "accuracy": 0.9777562862669246,
+            "precision": 0.9357142857142857,
+            "recall": 0.903448275862069,
+            "f1_score": 0.9192982456140351
+        },
+        "Random Forest": {
+            "accuracy": 0.9671179883945842,
+            "precision": 0.9911504424778761,
+            "recall": 0.7724137931034483,
+            "f1_score": 0.8682170542635659
+        },
+        "Decision Tree": {
+            "accuracy": 0.9429400386847195,
+            "precision": 0.8161764705882353,
+            "recall": 0.7655172413793103,
+            "f1_score": 0.7900355871886121
+        },
+        "Support Vector Machine": {
+            "accuracy": 0.9777562862669246,
+            "precision": 0.9841269841269841,
+            "recall": 0.8551724137931035,
+            "f1_score": 0.915129151291513
+        }
+    },
+    "best_model": "Support Vector Machine"
+}
